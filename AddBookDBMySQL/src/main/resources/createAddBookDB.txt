@@ -16,3 +16,49 @@ mysql> show databases;
 7 rows in set (0.06 sec)
 
 mysql>
+======================================================================================================================
+//UC2
+
+mysql>  show databases;
++----------------------+
+| Database             |
++----------------------+
+| address_book_service |
+| information_schema   |
+| learn                |
+| mysql                |
+| performance_schema   |
+| smapledatabase2      |
+| sys                  |
++----------------------+
+7 rows in set (0.38 sec)
+
+mysql> use address_book_service;
+Database changed
+mysql> create table addressbook(
+    -> firstname varchar(150) not null,
+    -> lastname varchar(150) not null,
+    -> address varchar(150) not null,
+    -> city varchar(150) not null,
+    -> state varchar(150) not null,
+    -> zip int not null,
+    -> email varchar(150) not null
+    -> ,phoneNumber int not null);
+Query OK, 0 rows affected (0.24 sec)
+
+mysql> desc addressbook;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| firstname   | varchar(150) | NO   |     | NULL    |       |
+| lastname    | varchar(150) | NO   |     | NULL    |       |
+| address     | varchar(150) | NO   |     | NULL    |       |
+| city        | varchar(150) | NO   |     | NULL    |       |
+| state       | varchar(150) | NO   |     | NULL    |       |
+| zip         | int          | NO   |     | NULL    |       |
+| email       | varchar(150) | NO   |     | NULL    |       |
+| phoneNumber | int          | NO   |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+8 rows in set (0.06 sec)
+
+mysql>
