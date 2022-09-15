@@ -1,0 +1,18 @@
+mysql> create database address_Book_Service;
+Query OK, 1 row affected (0.17 sec)
+
+mysql> show databases;
++----------------------+
+| Database             |
++----------------------+
+| address_book_service |
+| information_schema   |
+| learn                |
+| mysql                |
+| performance_schema   |
+| smapledatabase2      |
+| sys                  |
++----------------------+
+7 rows in set (0.06 sec)
+
+mysql>
