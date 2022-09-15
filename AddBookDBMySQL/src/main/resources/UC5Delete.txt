@@ -1,0 +1,22 @@
++-----------+----------+----------+-------------+-------------+--------+------------------+-------------+
+| firstname | lastname | address  | city        | state       | zip    | email            | phoneNumber |
++-----------+----------+----------+-------------+-------------+--------+------------------+-------------+
+| Abhishek  | Kumar    | Patna    | Muzaffarpur | Bihar       | 843108 | abhishek@xyz.com |    95862310 |
+| Mahendra  | Dhoni    | Harmoo   | Ranchi      | Jharkhand   | 843058 | abhi@xyz.com     |      620456 |
+| Rahul     | Thakur   | Binaguri | darjelling  | West Bengal | 741258 | rkronin@yahoo.in |       78965 |
++-----------+----------+----------+-------------+-------------+--------+------------------+-------------+
+3 rows in set (0.00 sec)
+
+mysql> delete from addressbook where firstname = 'Mahendra';
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from addressbook;
++-----------+----------+----------+-------------+-------------+--------+------------------+-------------+
+| firstname | lastname | address  | city        | state       | zip    | email            | phoneNumber |
++-----------+----------+----------+-------------+-------------+--------+------------------+-------------+
+| Abhishek  | Kumar    | Patna    | Muzaffarpur | Bihar       | 843108 | abhishek@xyz.com |    95862310 |
+| Rahul     | Thakur   | Binaguri | darjelling  | West Bengal | 741258 | rkronin@yahoo.in |       78965 |
++-----------+----------+----------+-------------+-------------+--------+------------------+-------------+
+2 rows in set (0.00 sec)
+
+mysql>
